@@ -1,0 +1,85 @@
+<template name="grumble">
+	<form class="main">
+		<fieldset>
+    	<legend>New Grumble</legend>
+			<table border="0">
+				<tr>
+					<td>
+						<label class="control-label" for="shortdesc"><span style="color:red;">*</span>&nbsp;Short Description</label>
+						<input name="shortdesc" type="text" value="" placeholder="Heater not working"/>
+					</td>
+					<td>
+						<label class="control-label" for="urgency">Urgency</label>
+						<select name="urgency" >
+							<option value="high">High</option>
+							<option value="medium">Medium</option>
+							<option value="low">Low</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label class="control-label" for="date">Date</label>
+						<input name="date" type="date" value="{{date}}" />
+					</td>
+					<td>
+						<label class="control-label" for="time">Time</label>
+						<input name="time" type="time" value="{{time}}" />
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label class="control-label" for="dept">Department/Building</label>
+						<input name="dept" type="text" value="" placeholder="Physiotherapy"/>
+					</td>
+					<td>
+						<label class="control-label" for="unit">Unit</label>
+						<input name="unit" type="text" value="" placeholder="Occupational Therapy"/>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label class="control-label" for="room">Room</label>
+						<input name="room" type="text" value="" placeholder="P2"/>
+					</td>
+					<td>
+						<label class="control-label" for="category">Category</label>
+						<input name="category" type="text" value="" placeholder="Utility"/>
+					</td>
+				</tr>
+			</table>
+			<label class="control-label" for="details" style="margin-left:2%;">Details</label>
+						<textarea rows="5" cols="80" name="details" value="" placeholder="Please provide details of the issue." style="width: 95%;margin-left:2%;"/>
+			<div class="control-group">
+				<div class="controls">
+					<input type="submit" value="Submit" class="btn btn-primary"/>
+				</div>
+			</div>
+		</fieldset>
+	</form>
+</template>
+
+<template name="grumble2">
+	<form class="main">
+		<fieldset>
+    	<legend>New Grumble</legend>
+			<table border="0">
+				<tr>
+					<td>
+						<label class="control-label" for="details"><span style="color:red;">*</span>&nbsp;Description</label>
+						<textarea rows="14" cols="80" name="details" value="" placeholder="Broken heater next to vending machine." style="width: 300px; height: 150px;"/>
+					</td>
+				</tr>
+			</table>
+			<div class="control-group">
+				<div class="controls">
+					<input type="submit" value="Submit" class="btn btn-primary"/>
+				</div>
+			</div>
+		</fieldset>
+	</form>
+</template>
+
+<template name="thankyou">
+	Thank you for submitting the issue. Click "Grumble" to submit another issue.
+</template>
