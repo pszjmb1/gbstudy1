@@ -12,7 +12,8 @@ Template.grumble.events({
 			shortdesc: $(e.target).find('[name=shortdesc]').val(),
 			details: $(e.target).find('[name=details]').val(),
 			user: Session.get('currentUser'),
-			interface:  Session.get('interface')
+			interface:  Session.get('interface'),
+      started: Session.get('started')
 		}
 
 		Meteor.call('grumble', issue, function(error, id) {
@@ -28,7 +29,10 @@ Template.grumble2.events({
 	'submit form': function(e) {
 		e.preventDefault();
 		var issue = {
-			details: $(e.target).find('[name=details]').val()
+			details: $(e.target).find('[name=details]').val(),
+			user: Session.get('currentUser'),
+			interface:  Session.get('interface'),
+      started: Session.get('started')
 		}
 
 		Meteor.call('grumble', issue, function(error, id) {

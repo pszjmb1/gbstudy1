@@ -5,8 +5,8 @@
 			<table border="0">
 				<tr>
 					<td>
-						<label class="control-label" for="shortdesc"><span style="color:red;">*</span>&nbsp;Short Description</label>
-						<input name="shortdesc" type="text" value="" placeholder="Heater not working"/>
+						<label class="control-label" for="shortdesc"><span style="color:red;">*</span>&nbsp;Issue Short Description</label>
+						<input name="shortdesc" type="text" value="" />
 					</td>
 					<td>
 						<label class="control-label" for="urgency">Urgency</label>
@@ -30,26 +30,26 @@
 				<tr>
 					<td>
 						<label class="control-label" for="dept">Department/Building</label>
-						<input name="dept" type="text" value="" placeholder="Physiotherapy"/>
+						<input name="dept" type="text" value="" />
 					</td>
 					<td>
 						<label class="control-label" for="unit">Unit</label>
-						<input name="unit" type="text" value="" placeholder="Occupational Therapy"/>
+						<input name="unit" type="text" value="" />
 					</td>
 				</tr>
 				<tr>
 					<td>
 						<label class="control-label" for="room">Room</label>
-						<input name="room" type="text" value="" placeholder="P2"/>
+						<input name="room" type="text" value="" />
 					</td>
 					<td>
 						<label class="control-label" for="category">Category</label>
-						<input name="category" type="text" value="" placeholder="Utility"/>
+						<input name="category" type="text" value="" />
 					</td>
 				</tr>
 			</table>
-			<label class="control-label" for="details" style="margin-left:2%;">Details</label>
-						<textarea rows="5" cols="80" name="details" value="" placeholder="Please provide details of the issue." style="width: 95%;margin-left:2%;"/>
+			<label class="control-label" for="details" style="font-size: large; margin-left:2%;" style="margin-left:2%;"><span style="color:red;">*</span>&nbsp;Please use this box to describe the issue in enough detail that it can be resolved, then click the submit button.</label>
+						<textarea rows="5" cols="80" name="details" value="" style="width: 95%;margin-left:2%;"/>
 			<div class="control-group">
 				<div class="controls">
 					<input type="submit" value="Submit" class="btn btn-primary"/>
@@ -63,14 +63,8 @@
 	<form class="main">
 		<fieldset>
     	<legend>New Grumble</legend>
-			<table border="0">
-				<tr>
-					<td>
-						<label class="control-label" for="details"><span style="color:red;">*</span>&nbsp;Description</label>
-						<textarea rows="14" cols="80" name="details" value="" placeholder="Broken heater next to vending machine." style="width: 300px; height: 150px;"/>
-					</td>
-				</tr>
-			</table>
+				<label class="control-label" style="font-size: large;" for="details"><span style="color:red; ">*</span>&nbsp; Please use this box to describe the issue in enough detail that it can be resolved, then click the submit button.</label>
+				<textarea  name="details" value="" rows="14" style="width: 95%; height: 100%; margin-left:2%;"/>
 			<div class="control-group">
 				<div class="controls">
 					<input type="submit" value="Submit" class="btn btn-primary"/>

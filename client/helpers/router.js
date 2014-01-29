@@ -7,9 +7,11 @@ Meteor.Router.add({
     Session.set('currentUser', id);
     if(interface == 'wye'){
       Session.set('interface', 'wye');
+      Session.set('started', new Date().getTime());
       return 'grumble';  
     } else if(interface == 'mmz'){
       Session.set('interface', 'mmz');
+      Session.set('started', new Date().getTime());
       return 'grumble2';
     }    
   },

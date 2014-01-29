@@ -15,7 +15,7 @@ Meteor.methods({
 			_.pick(grumbleAttribs,
 			'date', 'time', 'dept',
 			'unit', 'room', 'urgency',
-			'category', 'shortdesc', 'details', 'user', 'interface'
+			'category', 'shortdesc', 'details', 'user', 'interface', 'started'
 			), {
 					submitted: new Date().getTime(),
 					commentsCount: 0
